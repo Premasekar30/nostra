@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwindcss - CDN - Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- fontawesome-CDN-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Nostra</title>
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- navbar-section -->
+
+    <nav id="home" class="flex justify-between sticky top-0 z-20 bg-white w-full p-6">
+        <h1 class="text-2xl font-bold cursor-pointer">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-14 cursor-pointer hidden md:flex">
+            <a href="./index.html"><li class="hover:underline">Home</li></a>
+            <a href="./index.html"><li class="hover:underline">New Arrival</li></a>
+            <a href="./index.html"><li class="hover:underline">Most wanted</li></a>
+            <a href="./collection.html"><li class="hover:underline">Collection</li></a>
+            <a href="#"><li class="hover:underline">Contact Us</li></a>
+        </ul>
+    </nav>
+
+        <!-- side navbar -->
+
+    <section id="sidenav" class="bg-gray-900 text-white fixed z-20 top-0 transition-all duration-1000" style="width: 60%; height: 100vh; left: -60%;">
+            <div class="text-right p-5">
+                <p id="closetag" class="cursor-pointer"><i class="fa fa-close" style="font-size:20px"></i></p>
+            </div>
+            <ul class="flex gap-10 flex-col items-center">
+                <li class="hover:underline"><a href="./index.html">Home</a></li>
+                <li class="hover:underline"><a href="./collection.html">collections</a></li>
+                <li class="hover:underline"><a href="">contact Us</a></li>
+            </ul>
+    </section>    
+
+    <!-- contact-form -->
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Newletter-section -->
+    
+    <section class="text-center" style="margin-top: 5%;">
+            <h2 class="font-black" style=" font-size: 3vw;">Join Our News Letter</h2>
+            <p class="my-3" style="font-size: 1.5vw;">Singup for our email newspaper to get exclusive discounts, updates and more.</p>
+            <input type="text" style="width: 80%; margin: 0 auto; font-size: 1.5vw;" placeholder="write here..." class="border border-black block p-3">
+            <button class="border border-black p-3 underline bg-black rounded-2xl text-white mt-3" style="font-size: 1.5vw;">Subscribe <i class="fa-sharp fa-solid fa-arrow-right-long"></i></button>
+    </section>
+    
+    <!-- footer-section -->
+    
+    <section class="bg-gray-900 text-white p-8 mt-8">
+            <h2 class="font-bold mb-4" style="font-size: 3vw;">Nostra</h2>
+            <p style="font-size: 1.5vw;">The standrad chunk of pics and docs used in this to create a model webpage using tailwind css</p>
+            <div class="flex gap-5" style="margin-top: 2%; font-size: 1.5vw;">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p class="mt-4" style="font-size: 1.5vw;">@ 2003 Nostra.com</p>
+    </section>
+
+    <script src="./script.js"></script>
+    </body>
+</html>
